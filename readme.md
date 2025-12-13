@@ -1,0 +1,3 @@
+# Reporte semanal de indicadores del Banco Central de Bolivia
+
+El Banco Central de Bolivia publica un [reporte semanal](https://www.bcb.gob.bo/?q=estad-sticas-semanales) con indicadores de operaciones con el exterior, información monetaria y otras categorías. Se construyo un [índice de indicadores](indice.csv) siguiendo aquellos disponibles en la [publicación del 5 de diciembre de 2025](https://www.bcb.gob.bo/webdocs/05_estadisticassemanales/Semanal%202_2025.xlsx), y se llenaron valores hasta fines de 2008 con reportes previos. Cada valor corresponde a una variable o subvariable en una categoría, se expresa en una unidad y corresponde a una fecha.

@@ -1,0 +1,73 @@
+unidad,categoria,variable,subvariable
+millones de $us,Operaciones con el exterior,Reservas internacionales brutas del BCB,Divisas
+millones de $us,Operaciones con el exterior,Reservas internacionales brutas del BCB,DEG
+millones de $us,Operaciones con el exterior,Reservas internacionales brutas del BCB,Oro
+millones de $us,Operaciones con el exterior,Reservas internacionales brutas del BCB,Posición con el FMI
+millones de $us,Operaciones con el exterior,Total Activos Externos (1 + 2 + 3 + 4 + 5),1. Reservas internacionales netas del BCB
+millones de $us,Operaciones con el exterior,Total Activos Externos (1 + 2 + 3 + 4 + 5),2. Activos externos netos de entidades financieras de intermediación
+millones de $us,Operaciones con el exterior,Total Activos Externos (1 + 2 + 3 + 4 + 5),d/c Fondo RAL en ME
+millones de $us,Operaciones con el exterior,Total Activos Externos (1 + 2 + 3 + 4 + 5),3. Fondo para la Revolución Industrial Productiva (FINPRO)
+millones de $us,Operaciones con el exterior,Total Activos Externos (1 + 2 + 3 + 4 + 5),4. Fondos  de Protección (FPA y FPAH en ME)14
+millones de $us,Operaciones con el exterior,Total Activos Externos (1 + 2 + 3 + 4 + 5),5. Fondo Para la Inversión Exploracion y Explotacion de Hidrocarburos (FPIEEH)
+millones de $us,Operaciones con el exterior,Adjudicación de dólares en el Bolsín  - Sistema Financiero,
+millones de $us,Operaciones con el exterior,Adjudicación de dólares en el Bolsín  - Sector Privado,
+millones de $us,Operaciones con el exterior,Adjudicación de dólares en Ventas Directas - Sistema Financiero,
+millones de $us,Operaciones con el exterior,Adjudicación de dólares en Ventas Directas  - Sector Privado,
+millones de $us,Operaciones con el exterior,Compras de dólares al Sistema Financiero por el BCB,
+millones de $us,Operaciones con el exterior,Transferencias del exterior al  Sistema Financiero a través del BCB,
+millones de $us,Operaciones con el exterior,Transferencias del Sistema Financiero al exterior a través del BCB,
+millones de Bs,Información monetaria,Base monetaria,
+millones de Bs,Información monetaria,Emisión Monetaria,
+millones de Bs,Información monetaria,Crédito interno neto del BCB (incluye obligaciones de mediano y largo plazo),
+millones de Bs,Información monetaria,Crédito neto del BCB al Sector Público No financiero,Créditos del BCB al SPNF
+millones de Bs,Información monetaria,Crédito neto del BCB al Sector Público No financiero,Depósitos del SPNF en el BCB
+millones de Bs,Información monetaria,Crédito a otros sectores (financiero y privado),
+millones de Bs,Información monetaria,Agregados Monetarios,M’1
+millones de Bs,Información monetaria,Agregados Monetarios,M’2
+millones de Bs,Información monetaria,Agregados Monetarios,M’3
+%,Información monetaria,Participación de MN y UFV en Agregados Monetarios,M1 / M’1
+%,Información monetaria,Participación de MN y UFV en Agregados Monetarios,M2 / M’2
+%,Información monetaria,Participación de MN y UFV en Agregados Monetarios,M3 / M’3
+millones de $us,Operaciones de mercado abierto y financiamiento del BCB,Saldos netos de títulos,a)  Tesoro General de la Nación
+millones de Bs,Operaciones de mercado abierto y financiamiento del BCB,Saldos netos de títulos,a)  Tesoro General de la Nación: MN y UFV
+millones de $us,Operaciones de mercado abierto y financiamiento del BCB,Saldos netos de títulos,a)  Tesoro General de la Nación: ME y MVDOL
+millones de $us,Operaciones de mercado abierto y financiamiento del BCB,Saldos netos de títulos,b)  Banco Central de Bolivia
+millones de Bs,Operaciones de mercado abierto y financiamiento del BCB,Saldos netos de títulos,b)  Banco Central de Bolivia: MN y UFV
+millones de Bs,Operaciones de mercado abierto y financiamiento del BCB,Saldos netos de títulos,b)  Banco Central de Bolivia: MN y UFV (Del cual venta directa)
+millones de $us,Operaciones de mercado abierto y financiamiento del BCB,Saldos netos de títulos,b)  Banco Central de Bolivia: ME y MVDOL
+millones de $us,Operaciones de mercado abierto y financiamiento del BCB,Financiamiento de corto plazo al sistema financiero,a)  Créditos de Liquidez c/garantía del encaje legal en títulos
+millones de Bs,Operaciones de mercado abierto y financiamiento del BCB,Financiamiento de corto plazo al sistema financiero,a)  Créditos de Liquidez c/garantía del encaje legal en títulos: MN y UFV
+millones de $us,Operaciones de mercado abierto y financiamiento del BCB,Financiamiento de corto plazo al sistema financiero,a)  Créditos de Liquidez c/garantía del encaje legal en títulos: ME y MVDOL
+millones de $us,Operaciones de mercado abierto y financiamiento del BCB,Financiamiento de corto plazo al sistema financiero,b)  Reportos
+millones de Bs,Operaciones de mercado abierto y financiamiento del BCB,Financiamiento de corto plazo al sistema financiero,b)  Reportos: MN y UFV
+millones de $us,Operaciones de mercado abierto y financiamiento del BCB,Financiamiento de corto plazo al sistema financiero,b)  Reportos: ME y MVDOL
+millones de $us,Operaciones del sistema financiero,Ahorro en el Sistema Financiero,
+%,Operaciones del sistema financiero,Ahorro en el Sistema Financiero,Bolivianización
+millones de $us,Operaciones del sistema financiero,Depósitos en entidades de intermediación financiera,A la vista
+%,Operaciones del sistema financiero,Depósitos en entidades de intermediación financiera,A la vista: Bolivianización
+millones de $us,Operaciones del sistema financiero,Depósitos en entidades de intermediación financiera,Caja de ahorro
+%,Operaciones del sistema financiero,Depósitos en entidades de intermediación financiera,Caja de ahorro: Bolivianización
+millones de $us,Operaciones del sistema financiero,Depósitos en entidades de intermediación financiera,Plazo
+%,Operaciones del sistema financiero,Depósitos en entidades de intermediación financiera,Plazo: Bolivianización
+millones de $us,Operaciones del sistema financiero,Depósitos en entidades de intermediación financiera,Otros
+%,Operaciones del sistema financiero,Depósitos en entidades de intermediación financiera,Otros: Bolivianización
+millones de $us,Operaciones del sistema financiero,Encaje constituido por el sistema financiero  8,"Efectivo  MN, MV, UFV"
+millones de $us,Operaciones del sistema financiero,Encaje constituido por el sistema financiero  8,"Títulos  MN, UFV"
+millones de $us,Operaciones del sistema financiero,Encaje constituido por el sistema financiero  8,Efectivo  ME
+millones de $us,Operaciones del sistema financiero,Encaje constituido por el sistema financiero  8,"Títulos  ME, MV"
+millones de $us,Operaciones del sistema financiero,Excedente de Encaje en el BCB del sistema financiero ( en efectivo ),"MN, MV, UFV"
+millones de $us,Operaciones del sistema financiero,Excedente de Encaje en el BCB del sistema financiero ( en efectivo ),ME
+millones de $us,Operaciones del sistema financiero,Crédito del sistema financiero al sector privado,
+%,Operaciones del sistema financiero,Crédito del sistema financiero al sector privado: Bolivianización,
+Bs/$us,Tipos de cambio y valor de la UFV,Tipo de cambio de venta en el Bolsín,
+Bs/$us,Tipos de cambio y valor de la UFV,Tipo de cambio de compra en el BCB,
+Bs/$us,Tipos de cambio y valor de la UFV,Valor referencial de venta del dólar estadounidense,
+Bs/$us,Tipos de cambio y valor de la UFV,Valor referencial de compra del dólar estadounidense,
+base diciembre 2022=100,Tipos de cambio y valor de la UFV,Índice de tipo de cambio real,
+Bs/UFV día hábil,Tipos de cambio y valor de la UFV,UFV,
+Bs/UFV último día del mes,Tipos de cambio y valor de la UFV,UFV,
+%,Precios y tasas de interés,Variación mensual inflacion total,
+%,Precios y tasas de interés,Variación acumulada en el año,
+%,Precios y tasas de interés,Variación a doce meses,
+%,Precios y tasas de interés,Tasas premio de reporto del BCB,Moneda nacional
+%,Precios y tasas de interés,Tasas premio de reporto del BCB,Moneda extranjera

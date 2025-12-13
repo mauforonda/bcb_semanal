@@ -1,0 +1,54 @@
+{
+  "name": "bcb",
+  "title": "Reportes del Banco Central de Bolivia",
+  "version": "1.0.0",
+  "resources": [
+    {
+      "name": "bcb_semanal",
+      "title": "Reporte semanal de indicadores del Banco Central de Bolivia",
+      "type": "table",
+      "path": "datos.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "fecha",
+            "type": "date",
+            "description": "Fecha del registro"
+          },
+          {
+            "name": "unidad",
+            "type": "string",
+            "description": "Unidad del indicador"
+          },
+          {
+            "name": "categoria",
+            "type": "string",
+            "description": "Categoría del indicador",
+            "categories": [
+              "Operaciones con el exterior",
+              "Información monetaria",
+              "Operaciones de mercado abierto y financiamiento del BCB",
+              "Operaciones del sistema financiero",
+              "Tipos de cambio y valor de la UFV",
+              "Precios y tasas de interés"
+            ]
+          },
+          {
+            "name": "variable",
+            "type": "string",
+            "description": "Nombre del indicador"
+          },
+          {
+            "name": "subvariable",
+            "type": "string",
+            "description": "Nombre del componente del indicador"
+          }
+        ]
+      }
+    }
+  ]
+}
