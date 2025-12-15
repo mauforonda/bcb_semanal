@@ -163,8 +163,8 @@ const formatoFecha = new Intl.DateTimeFormat("es", {
 return {light_colors,dark_colors,colors,formatoFecha};
 }});
 
-define({id: "cd9fe327", inputs: ["d3","colors","Plot","width","formatoFecha"], outputs: ["plot_silueta"], body: (d3,colors,Plot,width,formatoFecha) => {
-function plot_silueta(desagregado) {
+define({id: "850962bd", inputs: ["d3","colors","Plot","width","formatoFecha"], outputs: ["plot_silueta"], body: (d3,colors,Plot,width,formatoFecha) => {
+function plot_silueta(desagregado, height) {
   // const desagregado = data.filter((d) => d.variable == variable);
   const unidad = desagregado[0].unidad;
   const serie = d3
@@ -227,7 +227,7 @@ function plot_silueta(desagregado) {
 
   const plot = Plot.plot({
     className: "plot",
-    height: 550,
+    height: width < 768 ? 350 : 550,
     width: width,
     marginTop: 70,
     marginLeft: 30,
@@ -455,7 +455,7 @@ descarga(desagregado, "data.csv", "Descarga esta tabla en formato CSV")
 <body>
 <div id="observablehq-center">
 <main id="observablehq-main" class="observablehq">
-<link rel="stylesheet" href="./_file/style.3787bdbc.css">
+<link rel="stylesheet" href="./_file/style.ed008e05.css">
 <div class="observablehq observablehq--block"><!--:045f09ba:--></div>
 <div class="observablehq observablehq--block"><!--:eecc0d5c:--></div>
 <div class="observablehq observablehq--block"><!--:84c4a1e4:--></div>
@@ -464,7 +464,7 @@ descarga(desagregado, "data.csv", "Descarga esta tabla en formato CSV")
 <div class="observablehq observablehq--block"><!--:9475551c:--></div>
 <div class="observablehq observablehq--block"><!--:46f5f04b:--></div>
 <div class="observablehq observablehq--block"><!--:5b1a625e:--></div>
-<div class="observablehq observablehq--block"><!--:cd9fe327:--></div>
+<div class="observablehq observablehq--block"><!--:850962bd:--></div>
 <div class="observablehq observablehq--block"><!--:5f1a2493:--></div>
 <div class="observablehq observablehq--block"><!--:8ef21806:--></div>
 <div class="observablehq observablehq--block"><!--:136b90f4:--></div>

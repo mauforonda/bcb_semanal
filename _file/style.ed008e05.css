@@ -32,7 +32,7 @@ body {
   background: var(--body);
   height: 100vh;
   max-width: 100%;
-  padding-bottom: 80px;
+  padding-bottom: 170px;
 }
 
 #observablehq-center {
@@ -83,8 +83,9 @@ menu {
 
 titulo {
   font-family: "Playfair Display", serif;
-  margin: 35px 0 25px 0;
-  font-size: 1.7rem;
+  margin: 25px 0 35px 0;
+  font-size: 1.8rem;
+  max-width: 650px;
   font-weight: 650;
   color: var(--titulo);
   text-align: center;
@@ -107,7 +108,7 @@ tabla {
 }
 
 descargas {
-  margin: 20px 5px;
+  margin: 10px 5px;
   button {
     padding: 5px;
     background-color: var(--background);
@@ -134,9 +135,15 @@ descargas {
       border-left: 0;
       border-right: 0;
       margin: 0;
+      box-shadow: none;
     }
   }
   titulo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    max-width: 350px;
+    margin: 15px 0 25px 0;
+  }
+  tabla {
+    margin: 10px 5px 10px 5px;
   }
 }
