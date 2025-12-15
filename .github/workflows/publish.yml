@@ -2,6 +2,9 @@ name: Publicar
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   publicar:
     name: publicar
