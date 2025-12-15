@@ -3,12 +3,12 @@ millones de $us,Operaciones con el exterior,Reservas internacionales brutas del 
 millones de $us,Operaciones con el exterior,Reservas internacionales brutas del BCB,DEG
 millones de $us,Operaciones con el exterior,Reservas internacionales brutas del BCB,Oro
 millones de $us,Operaciones con el exterior,Reservas internacionales brutas del BCB,Posición con el FMI
-millones de $us,Operaciones con el exterior,Total Activos Externos (1 + 2 + 3 + 4 + 5),1. Reservas internacionales netas del BCB
-millones de $us,Operaciones con el exterior,Total Activos Externos (1 + 2 + 3 + 4 + 5),2. Activos externos netos de entidades financieras de intermediación
-millones de $us,Operaciones con el exterior,Total Activos Externos (1 + 2 + 3 + 4 + 5),d/c Fondo RAL en ME
-millones de $us,Operaciones con el exterior,Total Activos Externos (1 + 2 + 3 + 4 + 5),3. Fondo para la Revolución Industrial Productiva (FINPRO)
-millones de $us,Operaciones con el exterior,Total Activos Externos (1 + 2 + 3 + 4 + 5),4. Fondos  de Protección (FPA y FPAH en ME)14
-millones de $us,Operaciones con el exterior,Total Activos Externos (1 + 2 + 3 + 4 + 5),5. Fondo Para la Inversión Exploracion y Explotacion de Hidrocarburos (FPIEEH)
+millones de $us,Operaciones con el exterior,Total Activos Externos,1. Reservas internacionales netas del BCB
+millones de $us,Operaciones con el exterior,Total Activos Externos,2. Activos externos netos de entidades financieras de intermediación
+millones de $us,Operaciones con el exterior,Total Activos Externos,d/c Fondo RAL en ME
+millones de $us,Operaciones con el exterior,Total Activos Externos,3. Fondo para la Revolución Industrial Productiva (FINPRO)
+millones de $us,Operaciones con el exterior,Total Activos Externos,4. Fondos  de Protección (FPA y FPAH en ME)14
+millones de $us,Operaciones con el exterior,Total Activos Externos,5. Fondo Para la Inversión Exploracion y Explotacion de Hidrocarburos (FPIEEH)
 millones de $us,Operaciones con el exterior,Adjudicación de dólares en el Bolsín  - Sistema Financiero,
 millones de $us,Operaciones con el exterior,Adjudicación de dólares en el Bolsín  - Sector Privado,
 millones de $us,Operaciones con el exterior,Adjudicación de dólares en Ventas Directas - Sistema Financiero,
@@ -51,10 +51,10 @@ millones de $us,Operaciones del sistema financiero,Depósitos en entidades de in
 %,Operaciones del sistema financiero,Depósitos en entidades de intermediación financiera,Plazo: Bolivianización
 millones de $us,Operaciones del sistema financiero,Depósitos en entidades de intermediación financiera,Otros
 %,Operaciones del sistema financiero,Depósitos en entidades de intermediación financiera,Otros: Bolivianización
-millones de $us,Operaciones del sistema financiero,Encaje constituido por el sistema financiero  8,"Efectivo  MN, MV, UFV"
-millones de $us,Operaciones del sistema financiero,Encaje constituido por el sistema financiero  8,"Títulos  MN, UFV"
-millones de $us,Operaciones del sistema financiero,Encaje constituido por el sistema financiero  8,Efectivo  ME
-millones de $us,Operaciones del sistema financiero,Encaje constituido por el sistema financiero  8,"Títulos  ME, MV"
+millones de $us,Operaciones del sistema financiero,Encaje constituido por el sistema financiero,"Efectivo  MN, MV, UFV"
+millones de $us,Operaciones del sistema financiero,Encaje constituido por el sistema financiero,"Títulos  MN, UFV"
+millones de $us,Operaciones del sistema financiero,Encaje constituido por el sistema financiero,Efectivo  ME
+millones de $us,Operaciones del sistema financiero,Encaje constituido por el sistema financiero,"Títulos  ME, MV"
 millones de $us,Operaciones del sistema financiero,Excedente de Encaje en el BCB del sistema financiero ( en efectivo ),"MN, MV, UFV"
 millones de $us,Operaciones del sistema financiero,Excedente de Encaje en el BCB del sistema financiero ( en efectivo ),ME
 millones de $us,Operaciones del sistema financiero,Crédito del sistema financiero al sector privado,
@@ -64,8 +64,8 @@ Bs/$us,Tipos de cambio y valor de la UFV,Tipo de cambio de compra en el BCB,
 Bs/$us,Tipos de cambio y valor de la UFV,Valor referencial de venta del dólar estadounidense,
 Bs/$us,Tipos de cambio y valor de la UFV,Valor referencial de compra del dólar estadounidense,
 base diciembre 2022=100,Tipos de cambio y valor de la UFV,Índice de tipo de cambio real,
-Bs/UFV día hábil,Tipos de cambio y valor de la UFV,UFV,
-Bs/UFV último día del mes,Tipos de cambio y valor de la UFV,UFV,
+Bs/UFV día hábil,Tipos de cambio y valor de la UFV,UFV día hábil,
+Bs/UFV último día del mes,Tipos de cambio y valor de la UFV,UFV último día del mes,
 %,Precios y tasas de interés,Variación mensual inflacion total,
 %,Precios y tasas de interés,Variación acumulada en el año,
 %,Precios y tasas de interés,Variación a doce meses,
