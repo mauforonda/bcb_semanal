@@ -53,14 +53,14 @@ const variables = Object.fromEntries(
 ```
 
 ```js
-const categoria_input = Inputs.select(Object.keys(variables), {
+const categoria_input = Inputs.radio(Object.keys(variables), {
   value: "Operaciones con el exterior",
 });
 const categoria = Generators.input(categoria_input);
 ```
 
 ```js
-const variable_input = Inputs.select(variables[categoria], {
+const variable_input = Inputs.radio(variables[categoria], {
   value: variables[categoria][0],
 });
 const variable = Generators.input(variable_input);
@@ -160,7 +160,7 @@ function plot_silueta(desagregado, height) {
   const plot = Plot.plot({
     className: "plot",
     height: width < 768 ? 350 : 550,
-    width: width,
+    width: width < 768 ? width : 980,
     marginTop: 70,
     marginLeft: 30,
     marginRight: 40,
@@ -337,18 +337,25 @@ const desagregado = data.filter((d) => d.variable == variable);
 const silueta = plot_silueta(desagregado);
 const table = Inputs.table(desagregado, {
   sort: "fecha",
+  columns:
+    width < 768
+      ? ["subvariable", "fecha", "valor", "unidad"]
+      : ["variable", "subvariable", "fecha", "valor", "unidad"],
   reverse: true,
   select: false,
 });
 ```
 
 <cuerpo>
+  <header>Reportes del Banco Central del Bolivia</header>
   <menu>
-    ${categoria_input}
-    ${variable_input}
+    <categorias>${categoria_input}</categorias>
+    <variables>${variable_input}</variables>
   </menu>
-  <titulo>${variable}</titulo>
-  <card>${silueta}</card>
+  <grafico>
+    <titulo>${variable}</titulo>
+    <card>${silueta}</card>
+  </grafico>
   <tabla>${table}</tabla>
   <descargas>${descarga(desagregado, "data.csv", "Descarga esta tabla en formato CSV")}</descargas>
 </cuerpo>
