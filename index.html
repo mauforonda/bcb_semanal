@@ -117,16 +117,16 @@ const variables = Object.fromEntries(
 return {variables};
 }});
 
-define({id: "9475551c", inputs: ["Inputs","variables","Generators"], outputs: ["categoria_input","categoria"], body: (Inputs,variables,Generators) => {
-const categoria_input = Inputs.select(Object.keys(variables), {
+define({id: "58ac8938", inputs: ["Inputs","variables","Generators"], outputs: ["categoria_input","categoria"], body: (Inputs,variables,Generators) => {
+const categoria_input = Inputs.radio(Object.keys(variables), {
   value: "Operaciones con el exterior",
 });
 const categoria = Generators.input(categoria_input);
 return {categoria_input,categoria};
 }});
 
-define({id: "46f5f04b", inputs: ["Inputs","variables","categoria","Generators"], outputs: ["variable_input","variable"], body: (Inputs,variables,categoria,Generators) => {
-const variable_input = Inputs.select(variables[categoria], {
+define({id: "b5f393b7", inputs: ["Inputs","variables","categoria","Generators"], outputs: ["variable_input","variable"], body: (Inputs,variables,categoria,Generators) => {
+const variable_input = Inputs.radio(variables[categoria], {
   value: variables[categoria][0],
 });
 const variable = Generators.input(variable_input);
@@ -163,7 +163,7 @@ const formatoFecha = new Intl.DateTimeFormat("es", {
 return {light_colors,dark_colors,colors,formatoFecha};
 }});
 
-define({id: "850962bd", inputs: ["d3","colors","Plot","width","formatoFecha"], outputs: ["plot_silueta"], body: (d3,colors,Plot,width,formatoFecha) => {
+define({id: "5853d1b4", inputs: ["d3","colors","Plot","width","formatoFecha"], outputs: ["plot_silueta"], body: (d3,colors,Plot,width,formatoFecha) => {
 function plot_silueta(desagregado, height) {
   // const desagregado = data.filter((d) => d.variable == variable);
   const unidad = desagregado[0].unidad;
@@ -228,7 +228,7 @@ function plot_silueta(desagregado, height) {
   const plot = Plot.plot({
     className: "plot",
     height: width < 768 ? 350 : 550,
-    width: width,
+    width: width < 768 ? width : 980,
     marginTop: 70,
     marginLeft: 30,
     marginRight: 40,
@@ -403,11 +403,15 @@ function descarga(data, filename, mensaje) {
 return {descarga};
 }});
 
-define({id: "136b90f4", inputs: ["data","variable","plot_silueta","Inputs"], outputs: ["desagregado","silueta","table"], body: (data,variable,plot_silueta,Inputs) => {
+define({id: "e52c6a0c", inputs: ["data","variable","plot_silueta","Inputs","width"], outputs: ["desagregado","silueta","table"], body: (data,variable,plot_silueta,Inputs,width) => {
 const desagregado = data.filter((d) => d.variable == variable);
 const silueta = plot_silueta(desagregado);
 const table = Inputs.table(desagregado, {
   sort: "fecha",
+  columns:
+    width < 768
+      ? ["subvariable", "fecha", "valor", "unidad"]
+      : ["variable", "subvariable", "fecha", "valor", "unidad"],
   reverse: true,
   select: false,
 });
@@ -455,26 +459,29 @@ descarga(desagregado, "data.csv", "Descarga esta tabla en formato CSV")
 <body>
 <div id="observablehq-center">
 <main id="observablehq-main" class="observablehq">
-<link rel="stylesheet" href="./_file/style.ed008e05.css">
+<link rel="stylesheet" href="./_file/style.a00f9ecd.css">
 <div class="observablehq observablehq--block"><!--:045f09ba:--></div>
 <div class="observablehq observablehq--block"><!--:eecc0d5c:--></div>
 <div class="observablehq observablehq--block"><!--:84c4a1e4:--></div>
 <div class="observablehq observablehq--block"><!--:9df6fd3d:--></div>
 <div class="observablehq observablehq--block"><!--:171d4dcc:--></div>
-<div class="observablehq observablehq--block"><!--:9475551c:--></div>
-<div class="observablehq observablehq--block"><!--:46f5f04b:--></div>
+<div class="observablehq observablehq--block"><!--:58ac8938:--></div>
+<div class="observablehq observablehq--block"><!--:b5f393b7:--></div>
 <div class="observablehq observablehq--block"><!--:5b1a625e:--></div>
-<div class="observablehq observablehq--block"><!--:850962bd:--></div>
+<div class="observablehq observablehq--block"><!--:5853d1b4:--></div>
 <div class="observablehq observablehq--block"><!--:5f1a2493:--></div>
 <div class="observablehq observablehq--block"><!--:8ef21806:--></div>
-<div class="observablehq observablehq--block"><!--:136b90f4:--></div>
+<div class="observablehq observablehq--block"><!--:e52c6a0c:--></div>
 <cuerpo>
+  <header>Reportes del Banco Central del Bolivia</header>
   <menu>
-    <observablehq-loading></observablehq-loading><!--:a41e297b:-->
-    <observablehq-loading></observablehq-loading><!--:4728b0c3:-->
+    <categorias><observablehq-loading></observablehq-loading><!--:a41e297b:--></categorias>
+    <variables><observablehq-loading></observablehq-loading><!--:4728b0c3:--></variables>
   </menu>
-  <titulo><observablehq-loading></observablehq-loading><!--:3b325109:--></titulo>
-  <card><observablehq-loading></observablehq-loading><!--:3e0a6119:--></card>
+  <grafico>
+    <titulo><observablehq-loading></observablehq-loading><!--:3b325109:--></titulo>
+    <card><observablehq-loading></observablehq-loading><!--:3e0a6119:--></card>
+  </grafico>
   <tabla><observablehq-loading></observablehq-loading><!--:0d4fc4a7:--></tabla>
   <descargas><observablehq-loading></observablehq-loading><!--:56e5bf58:--></descargas>
 </cuerpo>
