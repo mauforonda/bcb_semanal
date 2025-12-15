@@ -96,7 +96,7 @@ const formatoFecha = new Intl.DateTimeFormat("es", {
 ```
 
 ```js
-function plot_silueta(desagregado) {
+function plot_silueta(desagregado, height) {
   // const desagregado = data.filter((d) => d.variable == variable);
   const unidad = desagregado[0].unidad;
   const serie = d3
@@ -159,7 +159,7 @@ function plot_silueta(desagregado) {
 
   const plot = Plot.plot({
     className: "plot",
-    height: 550,
+    height: width < 768 ? 350 : 550,
     width: width,
     marginTop: 70,
     marginLeft: 30,
