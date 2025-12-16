@@ -25,9 +25,9 @@ millones de Bs,Información monetaria,Crédito a otros sectores (financiero y pr
 millones de Bs,Información monetaria,Agregados Monetarios,M’1
 millones de Bs,Información monetaria,Agregados Monetarios,M’2
 millones de Bs,Información monetaria,Agregados Monetarios,M’3
-%,Información monetaria,Participación de MN y UFV en Agregados Monetarios,M1 / M’1
-%,Información monetaria,Participación de MN y UFV en Agregados Monetarios,M2 / M’2
-%,Información monetaria,Participación de MN y UFV en Agregados Monetarios,M3 / M’3
+%,Información monetaria,Participación de MN y UFV en Agregados Monetarios: M1 / M’1,
+%,Información monetaria,Participación de MN y UFV en Agregados Monetarios: M2 / M’2,
+%,Información monetaria,Participación de MN y UFV en Agregados Monetarios: M3 / M’3,
 millones de $us,Operaciones de mercado abierto y financiamiento del BCB,Saldos netos de títulos,a)  Tesoro General de la Nación
 millones de Bs,Operaciones de mercado abierto y financiamiento del BCB,Saldos netos de títulos,a)  Tesoro General de la Nación: MN y UFV
 millones de $us,Operaciones de mercado abierto y financiamiento del BCB,Saldos netos de títulos,a)  Tesoro General de la Nación: ME y MVDOL
@@ -66,8 +66,8 @@ Bs/$us,Tipos de cambio y valor de la UFV,Valor referencial de compra del dólar 
 base diciembre 2022=100,Tipos de cambio y valor de la UFV,Índice de tipo de cambio real,
 Bs/UFV día hábil,Tipos de cambio y valor de la UFV,UFV día hábil,
 Bs/UFV último día del mes,Tipos de cambio y valor de la UFV,UFV último día del mes,
-%,Precios y tasas de interés,Variación mensual inflacion total,
-%,Precios y tasas de interés,Variación acumulada en el año,
-%,Precios y tasas de interés,Variación a doce meses,
-%,Precios y tasas de interés,Tasas premio de reporto del BCB,Moneda nacional
-%,Precios y tasas de interés,Tasas premio de reporto del BCB,Moneda extranjera
+%,Precios y tasas de interés,Inflacion total: variación mensual,
+%,Precios y tasas de interés,Inflacion total: variación acumulada en el año,
+%,Precios y tasas de interés,Inflacion total: variación a doce meses,
+%,Precios y tasas de interés,Tasas premio de reporto del BCB: Moneda nacional,
+%,Precios y tasas de interés,Tasas premio de reporto del BCB: Moneda extranjera,
