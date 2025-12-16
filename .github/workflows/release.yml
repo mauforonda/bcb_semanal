@@ -1,0 +1,35 @@
+name: Release PDF bundle
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (e.g., v1.0.0)"
+        required: true
+      release_name:
+        description: "Release name (optional)"
+        required: false
+      notes:
+        description: "Release notes (optional)"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build PDF and publish release
+        uses: mauforonda/datapackage_quarto_release@v1
+        with:
+          tag: ${{ inputs.tag }}
+          release_name: ${{ inputs.release_name }}
+          release_body: ${{ inputs.notes }}
+          datapackage_path: datapackage.json
+          data_path: datos.csv
+          qmd_output: datapackage.qmd
+          pdf_output: ficha.pdf
