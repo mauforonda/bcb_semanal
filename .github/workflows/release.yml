@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build PDF and publish release
-        uses: mauforonda/datapackage_quarto_release@v1
+        uses: mauforonda/datapackage_quarto_release@main
         with:
           tag: ${{ inputs.tag }}
           release_name: ${{ inputs.release_name }}
