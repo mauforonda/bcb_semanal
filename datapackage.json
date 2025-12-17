@@ -46,6 +46,11 @@
             "name": "subvariable",
             "type": "string",
             "description": "Nombre del componente del indicador"
+          },
+          {
+            "name": "valor",
+            "type": "float",
+            "description": "Valor numérico del indicador o componente del indicador en la fecha de registro"
           }
         ]
       }
