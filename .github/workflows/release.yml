@@ -30,6 +30,8 @@ jobs:
           release_name: ${{ inputs.release_name }}
           release_body: ${{ inputs.notes }}
           datapackage_path: datapackage.json
-          data_path: datos.csv
+          data_paths: |
+            datos.csv
+            datos.xslx
           qmd_output: datapackage.qmd
           pdf_output: ficha.pdf
