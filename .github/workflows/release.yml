@@ -32,6 +32,6 @@ jobs:
           datapackage_path: datapackage.json
           data_paths: |
             datos.csv
-            datos.xslx
+            datos.xlsx
           qmd_output: datapackage.qmd
           pdf_output: ficha.pdf
