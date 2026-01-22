@@ -9,7 +9,7 @@ SB_URL = os.environ["SUPABASE_URL"]
 SB_KEY = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
 
 
-def guardar_supabase(df, tabla):
+def guardar_supabase(df, tabla, unicos):
     print(f"guardar {tabla}")
     chunk_size = 5000
     sleep_s = 0.2
@@ -17,16 +17,19 @@ def guardar_supabase(df, tabla):
     n = len(df)
     print(f"existen {n} filas que guardar")
     df.fecha = df.fecha.dt.strftime("%Y-%m-%d")
-    df.subvariable = df.subvariable.fillna("")
     for i in range(0, n, chunk_size):
         print(f"{n if i + chunk_size > n else i + chunk_size} filas")
         chunk = df.iloc[i : i + chunk_size]
         supabase.table(tabla).upsert(
             chunk.to_dict(orient="records"),
-            on_conflict="categoria,variable,subvariable,fecha",
+            on_conflict=unicos,
         ).execute()
         sleep(sleep_s)
 
 
-df = pd.read_parquet("datos.parquet")
-guardar_supabase(df, "bcb_semanal")
+reservas = pd.read_parquet("reservas.parquet")
+guardar_supabase(reservas, "bcb_reservas", "tipo,fecha")
+
+reporte = pd.read_parquet("datos.parquet")
+reporte.subvariable = reporte.subvariable.fillna("")
+guardar_supabase(reporte, "bcb_semanal", "categoria,variable,subvariable,fecha")

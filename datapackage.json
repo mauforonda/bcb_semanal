@@ -4,6 +4,78 @@
   "version": "1.0.0",
   "resources": [
     {
+      "name": "bcb_reservas_csv",
+      "title": "Reporte semanal de reservas internacionales del Banco Central de Bolivia (CSV)",
+      "type": "table",
+      "path": "reservas.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "fecha",
+            "type": "date",
+            "description": "Fecha del registro"
+          },
+          {
+            "name": "tipo",
+            "type": "string",
+            "description": "Tipo de reserva",
+            "categories": [
+              "Divisas",
+              "DEG",
+              "Oro",
+              "Posición con el FMI",
+              "Otros"
+            ]
+          },
+          {
+            "name": "valor",
+            "type": "float",
+            "description": "Monto de reservas en millones de dólares"
+          }
+        ]
+      }
+    },
+    {
+      "name": "bcb_reservas_xlsx",
+      "title": "Reporte semanal de reservas internacionales del Banco Central de Bolivia (Excel)",
+      "type": "table",
+      "path": "reservas.xlsx",
+      "scheme": "file",
+      "format": "xlsx",
+      "mediatype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "fecha",
+            "type": "date",
+            "description": "Fecha del registro"
+          },
+          {
+            "name": "tipo",
+            "type": "string",
+            "description": "Tipo de reserva",
+            "categories": [
+              "Divisas",
+              "DEG",
+              "Oro",
+              "Posición con el FMI",
+              "Otros"
+            ]
+          },
+          {
+            "name": "valor",
+            "type": "float",
+            "description": "Monto de reservas en millones de dólares"
+          }
+        ]
+      }
+    },
+    {
       "name": "bcb_semanal_csv",
       "title": "Reporte semanal de indicadores del Banco Central de Bolivia (CSV)",
       "type": "table",
