@@ -33,5 +33,7 @@ jobs:
           data_paths: |
             datos.csv
             datos.xlsx
+            reservas.csv
+            reservas.xlsx
           qmd_output: datapackage.qmd
           pdf_output: ficha.pdf

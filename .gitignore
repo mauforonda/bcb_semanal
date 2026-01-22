@@ -1,3 +1,4 @@
 .ipynb_checkpoints
 *.ipynb
+!serie_reservas.ipynb
 temporal/
