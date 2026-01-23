@@ -1,4 +1,4 @@
-name: Release PDF bundle
+name: Release
 
 on:
   workflow_dispatch:
@@ -45,3 +45,5 @@ jobs:
             reservas.xlsx
           qmd_output: datapackage.qmd
           pdf_output: ficha.pdf
+          identity: "mefp"
+          project: "Monitor de la Recuperación Económica"

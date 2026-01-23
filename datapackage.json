@@ -2,10 +2,16 @@
   "name": "bcb",
   "title": "Reportes del Banco Central de Bolivia",
   "version": "1.0.0",
+  "sources": [
+    {
+      "title": "Banco Central de Bolivia"
+    }
+  ],
   "resources": [
     {
       "name": "bcb_reservas_csv",
-      "title": "Reporte semanal de reservas internacionales del Banco Central de Bolivia (CSV)",
+      "title": "Reservas internacionales del Banco Central de Bolivia (CSV)",
+      "description": "Composición de las reservas internacionales por tipo de reserva en millones de dólares según reportes semanales del Banco Central de Bolivia",
       "type": "table",
       "path": "reservas.csv",
       "scheme": "file",
@@ -41,7 +47,8 @@
     },
     {
       "name": "bcb_reservas_xlsx",
-      "title": "Reporte semanal de reservas internacionales del Banco Central de Bolivia (Excel)",
+      "title": "Reservas internacionales del Banco Central de Bolivia (Excel)",
+      "description": "Composición de las reservas internacionales por tipo de reserva en millones de dólares según reportes semanales del Banco Central de Bolivia",
       "type": "table",
       "path": "reservas.xlsx",
       "scheme": "file",
@@ -77,7 +84,8 @@
     },
     {
       "name": "bcb_semanal_csv",
-      "title": "Reporte semanal de indicadores del Banco Central de Bolivia (CSV)",
+      "title": "Reporte de indicadores del Banco Central de Bolivia (CSV)",
+      "description": "Indicadores en reportes semanales del Banco Central de Bolivia",
       "type": "table",
       "path": "datos.csv",
       "scheme": "file",
@@ -129,7 +137,8 @@
     },
     {
       "name": "bcb_semanal_xlsx",
-      "title": "Reporte semanal de indicadores del Banco Central de Bolivia (Excel)",
+      "title": "Reporte de indicadores del Banco Central de Bolivia (Excel)",
+      "description": "Indicadores en reportes semanales del Banco Central de Bolivia",
       "type": "table",
       "path": "datos.xlsx",
       "scheme": "file",
