@@ -2,3 +2,4 @@
 *.ipynb
 !serie_reservas.ipynb
 temporal/
+last_run.txt
