@@ -36,7 +36,11 @@ jobs:
         with:
           tag: ${{ steps.tag.outputs.tag }}
           release_name: ${{ steps.tag.outputs.tag }}
-          release_body: ""
           datapackage_path: datapackage.json
           identity: "mefp"
           project: "Monitor de la Recuperación Económica"
+          upload: "true"
+          supabase_url: ${{ secrets.SUPABASE_URL }}
+          supabase_service_role_key: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          supabase_bucket: "descargas"
+
